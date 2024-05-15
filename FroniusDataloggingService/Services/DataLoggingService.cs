@@ -89,14 +89,10 @@ namespace FroniusDataLoggerService.Services
                 }
 
             }
-            catch (OperationCanceledException ex)
-            {
-
+            catch (OperationCanceledException)
+            {               
             }
-            catch (Exception ex)
-            {
-
-            }
+            
         }
 
         private async Task HandleResponseAsync(ResponseModel response)
@@ -119,7 +115,7 @@ namespace FroniusDataLoggerService.Services
 
         private void OnDataReceived(ResponseModel response)
         {
-            // This statement is secured by lock to prevent other threads to mess with queue while enqueuing staffs
+            // This statement is secured by lock to prevent other threads to mess with queue while enqueuing
             lock (locker) responseQueue.Enqueue(response);
 
             // Signal worker that model is enqueued and that it can be processed
@@ -170,7 +166,6 @@ namespace FroniusDataLoggerService.Services
 
                 default:
                     var result = ParseResponse(response);
-                    // This statement is secured by lock to prevent other threads to mess with queue while enqueuing staffs
                     await db.SaveDataAsync(result);
                     break;
             }
