@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FroniusDataloggingService", "FroniusDataloggingService\FroniusDataloggingService.csproj", "{0CFE1E0C-746E-4B5F-A960-D9C10A273448}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FroniusDataLoggerShared", "FroniusDataLoggerShared\FroniusDataLoggerShared.csproj", "{0BB9FEF8-21FD-4655-BB74-83D3C8FDF9A8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FroniusInterfaceCardLibrary", "FroniusInterfaceCardLibrary\FroniusInterfaceCardLibrary.csproj", "{F5DB75E1-1509-43EB-91C0-11900CC3FD8D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InfluxDbLibrary", "InfluxDbLibrary\InfluxDbLibrary.csproj", "{81943959-014F-4BE1-A52D-C1CD88202D67}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SendMailLibrary", "SendMailLibrary\SendMailLibrary.csproj", "{13754635-1759-419E-8C42-8C70231CEA3D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CFE1E0C-746E-4B5F-A960-D9C10A273448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CFE1E0C-746E-4B5F-A960-D9C10A273448}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CFE1E0C-746E-4B5F-A960-D9C10A273448}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CFE1E0C-746E-4B5F-A960-D9C10A273448}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BB9FEF8-21FD-4655-BB74-83D3C8FDF9A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BB9FEF8-21FD-4655-BB74-83D3C8FDF9A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BB9FEF8-21FD-4655-BB74-83D3C8FDF9A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BB9FEF8-21FD-4655-BB74-83D3C8FDF9A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5DB75E1-1509-43EB-91C0-11900CC3FD8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5DB75E1-1509-43EB-91C0-11900CC3FD8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5DB75E1-1509-43EB-91C0-11900CC3FD8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5DB75E1-1509-43EB-91C0-11900CC3FD8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81943959-014F-4BE1-A52D-C1CD88202D67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81943959-014F-4BE1-A52D-C1CD88202D67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81943959-014F-4BE1-A52D-C1CD88202D67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81943959-014F-4BE1-A52D-C1CD88202D67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13754635-1759-419E-8C42-8C70231CEA3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13754635-1759-419E-8C42-8C70231CEA3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13754635-1759-419E-8C42-8C70231CEA3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13754635-1759-419E-8C42-8C70231CEA3D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E91AE5C5-E008-405A-A994-99FCB8C386C2}
+	EndGlobalSection
+EndGlobal

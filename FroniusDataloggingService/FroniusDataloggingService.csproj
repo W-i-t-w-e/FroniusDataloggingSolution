@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+	  <AssemblyVersion>1.0.0.0</AssemblyVersion>
+	  <FileVersion>1.0.0.0</FileVersion>
+	  <Version>1.0.0</Version>
+	  <Authors>Hannes Wölk</Authors>
+	  <Copyright>Hannes Wölk</Copyright>
+    <UserSecretsId>dotnet-FroniusDataloggingService-6ba90587-bf40-4905-94d8-f627a32620f3</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Systemd" Version="8.0.0" />
+    <PackageReference Include="Serilog" Version="3.1.1" />
+    <PackageReference Include="Serilog.Extensions.Hosting" Version="8.0.0" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="8.0.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+    <PackageReference Include="SolarCalculator" Version="3.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FroniusInterfaceCardLibrary\FroniusInterfaceCardLibrary.csproj" />
+    <ProjectReference Include="..\InfluxDbLibrary\InfluxDbLibrary.csproj" />
+    <ProjectReference Include="..\SendMailLibrary\SendMailLibrary.csproj" />
+  </ItemGroup>
+</Project>
