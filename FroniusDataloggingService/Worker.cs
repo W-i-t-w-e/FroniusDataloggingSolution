@@ -82,6 +82,7 @@ namespace FroniusDataLoggerService
         public override async Task StopAsync(CancellationToken cancellationToken)
         {
             logger.LogInformation($"Stopping the data logging service ...");
+            timer.Dispose();
             await base.StopAsync(cancellationToken);
             logger.LogInformation($"Services stopped at {DateTime.Now}");
             return;
